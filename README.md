@@ -1,5 +1,7 @@
 # Pixel Asset Workshop
 
+[![Checks](https://github.com/956005596/pixel-asset-workshop/actions/workflows/check.yml/badge.svg)](https://github.com/956005596/pixel-asset-workshop/actions/workflows/check.yml)
+
 [简体中文](README.zh-CN.md) · [Usage guide (中文)](docs/guide.zh-CN.md) · [Agent guide (中文)](docs/agents.zh-CN.md) · [MIT](LICENSE)
 
 A local, offline workshop for pixel characters, baked sprite animations and
@@ -89,8 +91,9 @@ need manual adjustment. Enlarging a template does not create new detail.
 Effects support 4–32 frames and 1–30 FPS; canvases support up to 512 px. Imported
 effect cells are normalized to at most 64 px and at most 16 source frames.
 No online image generation, natural-language parser, GIF/APNG export or automatic
-game-engine integration is included. Final animation quality, touch interaction,
-Windows/Linux browser launch and game-engine integration need separate validation.
+game-engine integration is included. The smoke suite passes locally on macOS and on Ubuntu in GitHub Actions.
+Final animation quality, touch interaction, Windows browser launch and
+game-engine integration need separate validation.
 Automated checks verify mechanisms; they do not establish artistic acceptance.
 
 ## Project layout and contribution
