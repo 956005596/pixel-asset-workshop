@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "effect": {
+    "template": "ice",
+    "name": "Ice Burst",
+    "size": 256,
+    "frames": 24,
+    "fps": 24,
+    "color": "#54bcff",
+    "accent": "#def8ff",
+    "seed": 239438
+  },
+  "operations": [
+    {
+      "op": "update",
+      "id": "skill-wave",
+      "changes": {
+        "evolution": {
+          "from": 30,
+          "to": 160,
+          "turns": 0,
+          "curve": "out"
+        }
+      }
+    },
+    {
+      "op": "update",
+      "id": "skill-shards",
+      "changes": {
+        "count": 20,
+        "evolution": {
+          "from": 120,
+          "to": 35,
+          "turns": 1,
+          "curve": "out"
+        }
+      }
+    }
+  ],
+  "output": {
+    "name": "ice-burst",
+    "columns": 6,
+    "frame": 12,
+    "preview": {
+      "frames": [
+        0,
+        5,
+        10,
+        12,
+        17,
+        23
+      ],
+      "columns": 3,
+      "cellSize": 192
+    }
+  }
+}

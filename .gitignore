@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*
+outputs/
+AI生成素材/
+*.log
+coverage/

@@ -1,0 +1,22 @@
+{
+  "name": "pixel-asset-workshop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Offline pixel sprite and procedural VFX workshop with local CLI and MCP tools",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "test": "node tests/smoke.mjs",
+    "doctor": "node cli.mjs doctor",
+    "demo": "node cli.mjs run --request examples/ice-burst.json --out outputs/ice-burst",
+    "schema": "node scripts/generate-contract.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/956005596/pixel-asset-workshop.git"
+  }
+}

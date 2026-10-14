@@ -1,0 +1,1246 @@
+{
+  "format": "pixel-workshop-agent-contract",
+  "version": 1,
+  "capabilities": {
+    "apiVersion": "1.0",
+    "tool": "pixel-asset-workshop",
+    "frameIndexing": "zero-based",
+    "timelineUnit": "percent",
+    "moduleOrder": "last module draws on top",
+    "offline": true,
+    "limits": {
+      "sizes": [
+        32,
+        48,
+        64,
+        96,
+        128,
+        256,
+        512
+      ],
+      "frames": {
+        "min": 4,
+        "max": 32
+      },
+      "fps": {
+        "min": 1,
+        "max": 30
+      },
+      "modules": 6,
+      "assetFrames": 16,
+      "assetSize": 64,
+      "PNGSide": 2048,
+      "PNGBytes": 16777216,
+      "projectBytes": 201326592,
+      "characterSizes": [
+        32,
+        48,
+        64,
+        96,
+        128,
+        256,
+        512
+      ],
+      "characterPixels": 33554432,
+      "characterLayers": 8,
+      "characterFrames": 32,
+      "recipeBytes": 4194304
+    },
+    "skills": [
+      {
+        "id": "fire",
+        "name": "烈焰爆破",
+        "modules": [
+          {
+            "id": "skill-charge",
+            "name": "蓄力 · 法阵",
+            "shape": "rune",
+            "delay": 0,
+            "duration": 48
+          },
+          {
+            "id": "skill-gather",
+            "name": "聚能 · 微粒",
+            "shape": "star",
+            "delay": 0,
+            "duration": 44
+          },
+          {
+            "id": "skill-wave",
+            "name": "命中 · 冲击环",
+            "shape": "ring",
+            "delay": 42,
+            "duration": 45
+          },
+          {
+            "id": "skill-shards",
+            "name": "释放 · 飞散碎片",
+            "shape": "diamond",
+            "delay": 40,
+            "duration": 55
+          },
+          {
+            "id": "skill-tail",
+            "name": "消散 · 余烬",
+            "shape": "dot",
+            "delay": 65,
+            "duration": 35
+          }
+        ]
+      },
+      {
+        "id": "ice",
+        "name": "冰晶冲击",
+        "modules": [
+          {
+            "id": "skill-charge",
+            "name": "蓄力 · 法阵",
+            "shape": "rune",
+            "delay": 0,
+            "duration": 48
+          },
+          {
+            "id": "skill-gather",
+            "name": "聚能 · 微粒",
+            "shape": "star",
+            "delay": 0,
+            "duration": 44
+          },
+          {
+            "id": "skill-wave",
+            "name": "命中 · 冲击环",
+            "shape": "ring",
+            "delay": 42,
+            "duration": 45
+          },
+          {
+            "id": "skill-shards",
+            "name": "释放 · 飞散碎片",
+            "shape": "crystal",
+            "delay": 40,
+            "duration": 55
+          },
+          {
+            "id": "skill-tail",
+            "name": "消散 · 余烬",
+            "shape": "dot",
+            "delay": 65,
+            "duration": 35
+          }
+        ]
+      },
+      {
+        "id": "lightning",
+        "name": "雷电落击",
+        "modules": [
+          {
+            "id": "skill-charge",
+            "name": "蓄力 · 法阵",
+            "shape": "rune",
+            "delay": 0,
+            "duration": 48
+          },
+          {
+            "id": "skill-gather",
+            "name": "聚能 · 微粒",
+            "shape": "star",
+            "delay": 0,
+            "duration": 44
+          },
+          {
+            "id": "skill-wave",
+            "name": "命中 · 冲击环",
+            "shape": "ring",
+            "delay": 42,
+            "duration": 45
+          },
+          {
+            "id": "skill-shards",
+            "name": "释放 · 飞散碎片",
+            "shape": "bolt",
+            "delay": 40,
+            "duration": 30
+          },
+          {
+            "id": "skill-tail",
+            "name": "消散 · 余烬",
+            "shape": "star",
+            "delay": 65,
+            "duration": 35
+          }
+        ]
+      },
+      {
+        "id": "heal",
+        "name": "回春法阵",
+        "modules": [
+          {
+            "id": "skill-charge",
+            "name": "蓄力 · 法阵",
+            "shape": "rune",
+            "delay": 0,
+            "duration": 90
+          },
+          {
+            "id": "skill-gather",
+            "name": "聚能 · 微粒",
+            "shape": "star",
+            "delay": 0,
+            "duration": 90
+          },
+          {
+            "id": "skill-wave",
+            "name": "命中 · 冲击环",
+            "shape": "ring",
+            "delay": 42,
+            "duration": 45
+          },
+          {
+            "id": "skill-shards",
+            "name": "释放 · 飞散碎片",
+            "shape": "star",
+            "delay": 20,
+            "duration": 80
+          },
+          {
+            "id": "skill-tail",
+            "name": "消散 · 余烬",
+            "shape": "dot",
+            "delay": 65,
+            "duration": 35
+          }
+        ]
+      },
+      {
+        "id": "wind",
+        "name": "风刃连斩",
+        "modules": [
+          {
+            "id": "skill-charge",
+            "name": "蓄力 · 法阵",
+            "shape": "rune",
+            "delay": 0,
+            "duration": 48
+          },
+          {
+            "id": "skill-gather",
+            "name": "聚能 · 微粒",
+            "shape": "star",
+            "delay": 0,
+            "duration": 44
+          },
+          {
+            "id": "skill-slash1",
+            "name": "释放 · 第一斩",
+            "shape": "arc",
+            "delay": 24,
+            "duration": 35
+          },
+          {
+            "id": "skill-slash2",
+            "name": "命中 · 第二斩",
+            "shape": "arc",
+            "delay": 48,
+            "duration": 35
+          },
+          {
+            "id": "skill-tail",
+            "name": "消散 · 余烬",
+            "shape": "diamond",
+            "delay": 65,
+            "duration": 35
+          }
+        ]
+      }
+    ],
+    "presets": [
+      "hit",
+      "slash",
+      "fire",
+      "orb",
+      "heal",
+      "level",
+      "explosion",
+      "custom"
+    ],
+    "shapes": [
+      "star",
+      "dot",
+      "diamond",
+      "ring",
+      "arc",
+      "bolt",
+      "rune",
+      "crystal",
+      "image"
+    ],
+    "motions": [
+      "burst",
+      "rise",
+      "orbit",
+      "inward",
+      "sweep",
+      "pulse"
+    ],
+    "effectFields": [
+      "preset",
+      "size",
+      "frames",
+      "fps",
+      "color",
+      "accent",
+      "scale",
+      "count",
+      "seed",
+      "oneShot",
+      "animation"
+    ],
+    "moduleFields": [
+      "name",
+      "visible",
+      "shape",
+      "motion",
+      "colorSource",
+      "color",
+      "count",
+      "size",
+      "spread",
+      "trail",
+      "angle",
+      "x",
+      "y",
+      "delay",
+      "duration",
+      "fade",
+      "evolution"
+    ],
+    "moduleDefaults": {
+      "id": "agent-module-1",
+      "name": "星点爆发",
+      "visible": true,
+      "shape": "star",
+      "motion": "burst",
+      "colorSource": "main",
+      "color": "#7ee4c3",
+      "count": 16,
+      "size": 2,
+      "spread": 85,
+      "trail": 2,
+      "angle": 0,
+      "x": 0,
+      "y": 0,
+      "delay": 0,
+      "duration": 100,
+      "fade": "soft"
+    },
+    "animationDefaults": {
+      "type": "none",
+      "turns": 1,
+      "fromScale": 25,
+      "toScale": 115,
+      "burstAt": 60,
+      "burstPower": 75
+    },
+    "evolutionDefaults": {
+      "from": 100,
+      "to": 100,
+      "turns": 0,
+      "curve": "linear",
+      "blend": "normal"
+    },
+    "methods": [
+      "describe",
+      "getState",
+      "getProject",
+      "listPresets",
+      "setEffect",
+      "patchEffect",
+      "applyRecipe",
+      "loadProject",
+      "restoreRevision",
+      "importAsset",
+      "inspect",
+      "preview",
+      "exportBundle"
+    ],
+    "notes": [
+      "只支持现有形状、运动及PNG素材组合；不理解或补画任意新形态。",
+      "程序特效按所选画布重绘；素材帧仍使用64像素格。",
+      "空白起止帧允许；边缘接触仅提示可能裁切。",
+      "修改失败保留原项目；expectedRevision 可避免覆盖较新的修改。"
+    ]
+  },
+  "requestSchema": {
+    "type": "object",
+    "properties": {
+      "version": {
+        "const": 1
+      },
+      "projectPath": {
+        "type": "string",
+        "minLength": 1,
+        "description": "读取现有项目，不修改原文件。相对路径基于请求JSON所在目录；stdin/MCP基于工作目录。"
+      },
+      "recipePath": {
+        "type": "string",
+        "minLength": 1
+      },
+      "effect": {
+        "type": "object",
+        "properties": {
+          "template": {
+            "type": "string",
+            "enum": [
+              "fire",
+              "ice",
+              "lightning",
+              "heal",
+              "wind"
+            ]
+          },
+          "preset": {
+            "type": "string",
+            "enum": [
+              "hit",
+              "slash",
+              "fire",
+              "orb",
+              "heal",
+              "level",
+              "explosion",
+              "custom"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 40
+          },
+          "size": {
+            "type": "integer",
+            "enum": [
+              32,
+              48,
+              64,
+              96,
+              128,
+              256,
+              512
+            ]
+          },
+          "frames": {
+            "type": "integer",
+            "minimum": 4,
+            "maximum": 32
+          },
+          "fps": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 30
+          },
+          "color": {
+            "type": "string",
+            "pattern": "^#[0-9a-fA-F]{6}$"
+          },
+          "accent": {
+            "type": "string",
+            "pattern": "^#[0-9a-fA-F]{6}$"
+          },
+          "scale": {
+            "type": "integer",
+            "minimum": 40,
+            "maximum": 125
+          },
+          "count": {
+            "type": "integer",
+            "minimum": 4,
+            "maximum": 64
+          },
+          "seed": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1000000
+          },
+          "oneShot": {
+            "type": "boolean"
+          },
+          "animation": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "none",
+                  "spin",
+                  "grow",
+                  "shrink",
+                  "burst",
+                  "charge",
+                  "combo"
+                ]
+              },
+              "turns": {
+                "type": "integer",
+                "minimum": -3,
+                "maximum": 3
+              },
+              "fromScale": {
+                "type": "integer",
+                "minimum": 10,
+                "maximum": 140
+              },
+              "toScale": {
+                "type": "integer",
+                "minimum": 10,
+                "maximum": 140
+              },
+              "burstAt": {
+                "type": "integer",
+                "minimum": 20,
+                "maximum": 80
+              },
+              "burstPower": {
+                "type": "integer",
+                "minimum": 20,
+                "maximum": 100
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        },
+        "required": [],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "not": {
+              "required": [
+                "template",
+                "preset"
+              ]
+            }
+          }
+        ],
+        "description": "template选完整技能，preset选基础特效，二选一。不指定时修改当前效果。"
+      },
+      "operations": {
+        "type": "array",
+        "maxItems": 32,
+        "items": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "op": {
+                  "const": "add"
+                },
+                "module": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+                    },
+                    "name": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 24
+                    },
+                    "visible": {
+                      "type": "boolean"
+                    },
+                    "shape": {
+                      "type": "string",
+                      "enum": [
+                        "star",
+                        "dot",
+                        "diamond",
+                        "ring",
+                        "arc",
+                        "bolt",
+                        "rune",
+                        "crystal",
+                        "image"
+                      ]
+                    },
+                    "motion": {
+                      "type": "string",
+                      "enum": [
+                        "burst",
+                        "rise",
+                        "orbit",
+                        "inward",
+                        "sweep",
+                        "pulse"
+                      ]
+                    },
+                    "colorSource": {
+                      "type": "string",
+                      "enum": [
+                        "main",
+                        "accent",
+                        "custom"
+                      ]
+                    },
+                    "color": {
+                      "type": "string",
+                      "pattern": "^#[0-9a-fA-F]{6}$"
+                    },
+                    "count": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 48
+                    },
+                    "size": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 12
+                    },
+                    "spread": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 100
+                    },
+                    "trail": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 6
+                    },
+                    "angle": {
+                      "type": "integer",
+                      "minimum": -180,
+                      "maximum": 180
+                    },
+                    "x": {
+                      "type": "integer",
+                      "minimum": -30,
+                      "maximum": 30
+                    },
+                    "y": {
+                      "type": "integer",
+                      "minimum": -30,
+                      "maximum": 30
+                    },
+                    "delay": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 80,
+                      "description": "开始时间占完整动画的百分比。"
+                    },
+                    "duration": {
+                      "type": "integer",
+                      "minimum": 10,
+                      "maximum": 100,
+                      "description": "持续时间百分比；delay + duration 必须≤100。"
+                    },
+                    "fade": {
+                      "type": "string",
+                      "enum": [
+                        "soft",
+                        "out",
+                        "none"
+                      ]
+                    },
+                    "evolution": {
+                      "type": "object",
+                      "properties": {
+                        "from": {
+                          "type": "integer",
+                          "minimum": 10,
+                          "maximum": 250
+                        },
+                        "to": {
+                          "type": "integer",
+                          "minimum": 10,
+                          "maximum": 250
+                        },
+                        "turns": {
+                          "type": "integer",
+                          "minimum": -3,
+                          "maximum": 3
+                        },
+                        "curve": {
+                          "type": "string",
+                          "enum": [
+                            "linear",
+                            "in",
+                            "out",
+                            "smooth"
+                          ]
+                        },
+                        "blend": {
+                          "type": "string",
+                          "enum": [
+                            "normal",
+                            "add"
+                          ]
+                        }
+                      },
+                      "required": [],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [],
+                  "additionalProperties": false,
+                  "description": "新增时可省略字段，按默认值补齐。image需要导入PNG，不能只改shape凭空创建素材。"
+                },
+                "index": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 5
+                }
+              },
+              "required": [
+                "op",
+                "module"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "op": {
+                  "const": "update"
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+                },
+                "changes": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 24
+                    },
+                    "visible": {
+                      "type": "boolean"
+                    },
+                    "shape": {
+                      "type": "string",
+                      "enum": [
+                        "star",
+                        "dot",
+                        "diamond",
+                        "ring",
+                        "arc",
+                        "bolt",
+                        "rune",
+                        "crystal",
+                        "image"
+                      ]
+                    },
+                    "motion": {
+                      "type": "string",
+                      "enum": [
+                        "burst",
+                        "rise",
+                        "orbit",
+                        "inward",
+                        "sweep",
+                        "pulse"
+                      ]
+                    },
+                    "colorSource": {
+                      "type": "string",
+                      "enum": [
+                        "main",
+                        "accent",
+                        "custom"
+                      ]
+                    },
+                    "color": {
+                      "type": "string",
+                      "pattern": "^#[0-9a-fA-F]{6}$"
+                    },
+                    "count": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 48
+                    },
+                    "size": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 12
+                    },
+                    "spread": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 100
+                    },
+                    "trail": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 6
+                    },
+                    "angle": {
+                      "type": "integer",
+                      "minimum": -180,
+                      "maximum": 180
+                    },
+                    "x": {
+                      "type": "integer",
+                      "minimum": -30,
+                      "maximum": 30
+                    },
+                    "y": {
+                      "type": "integer",
+                      "minimum": -30,
+                      "maximum": 30
+                    },
+                    "delay": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 80,
+                      "description": "开始时间占完整动画的百分比。"
+                    },
+                    "duration": {
+                      "type": "integer",
+                      "minimum": 10,
+                      "maximum": 100,
+                      "description": "持续时间百分比；delay + duration 必须≤100。"
+                    },
+                    "fade": {
+                      "type": "string",
+                      "enum": [
+                        "soft",
+                        "out",
+                        "none"
+                      ]
+                    },
+                    "evolution": {
+                      "type": "object",
+                      "properties": {
+                        "from": {
+                          "type": "integer",
+                          "minimum": 10,
+                          "maximum": 250
+                        },
+                        "to": {
+                          "type": "integer",
+                          "minimum": 10,
+                          "maximum": 250
+                        },
+                        "turns": {
+                          "type": "integer",
+                          "minimum": -3,
+                          "maximum": 3
+                        },
+                        "curve": {
+                          "type": "string",
+                          "enum": [
+                            "linear",
+                            "in",
+                            "out",
+                            "smooth"
+                          ]
+                        },
+                        "blend": {
+                          "type": "string",
+                          "enum": [
+                            "normal",
+                            "add"
+                          ]
+                        }
+                      },
+                      "required": [],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "op",
+                "id",
+                "changes"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "op": {
+                  "const": "remove"
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+                }
+              },
+              "required": [
+                "op",
+                "id"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "op": {
+                  "const": "move"
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+                },
+                "index": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 5
+                }
+              },
+              "required": [
+                "op",
+                "id",
+                "index"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        }
+      },
+      "assets": {
+        "type": "array",
+        "maxItems": 6,
+        "items": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 80
+            },
+            "cellWidth": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 2048
+            },
+            "cellHeight": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 2048
+            },
+            "frameCount": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 16
+            },
+            "module": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^[a-zA-Z0-9_-]{1,80}$"
+                },
+                "name": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 24
+                },
+                "visible": {
+                  "type": "boolean"
+                },
+                "shape": {
+                  "type": "string",
+                  "enum": [
+                    "star",
+                    "dot",
+                    "diamond",
+                    "ring",
+                    "arc",
+                    "bolt",
+                    "rune",
+                    "crystal",
+                    "image"
+                  ]
+                },
+                "motion": {
+                  "type": "string",
+                  "enum": [
+                    "burst",
+                    "rise",
+                    "orbit",
+                    "inward",
+                    "sweep",
+                    "pulse"
+                  ]
+                },
+                "colorSource": {
+                  "type": "string",
+                  "enum": [
+                    "main",
+                    "accent",
+                    "custom"
+                  ]
+                },
+                "color": {
+                  "type": "string",
+                  "pattern": "^#[0-9a-fA-F]{6}$"
+                },
+                "count": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 48
+                },
+                "size": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 12
+                },
+                "spread": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 100
+                },
+                "trail": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 6
+                },
+                "angle": {
+                  "type": "integer",
+                  "minimum": -180,
+                  "maximum": 180
+                },
+                "x": {
+                  "type": "integer",
+                  "minimum": -30,
+                  "maximum": 30
+                },
+                "y": {
+                  "type": "integer",
+                  "minimum": -30,
+                  "maximum": 30
+                },
+                "delay": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 80,
+                  "description": "开始时间占完整动画的百分比。"
+                },
+                "duration": {
+                  "type": "integer",
+                  "minimum": 10,
+                  "maximum": 100,
+                  "description": "持续时间百分比；delay + duration 必须≤100。"
+                },
+                "fade": {
+                  "type": "string",
+                  "enum": [
+                    "soft",
+                    "out",
+                    "none"
+                  ]
+                },
+                "evolution": {
+                  "type": "object",
+                  "properties": {
+                    "from": {
+                      "type": "integer",
+                      "minimum": 10,
+                      "maximum": 250
+                    },
+                    "to": {
+                      "type": "integer",
+                      "minimum": 10,
+                      "maximum": 250
+                    },
+                    "turns": {
+                      "type": "integer",
+                      "minimum": -3,
+                      "maximum": 3
+                    },
+                    "curve": {
+                      "type": "string",
+                      "enum": [
+                        "linear",
+                        "in",
+                        "out",
+                        "smooth"
+                      ]
+                    },
+                    "blend": {
+                      "type": "string",
+                      "enum": [
+                        "normal",
+                        "add"
+                      ]
+                    }
+                  },
+                  "required": [],
+                  "additionalProperties": false
+                }
+              },
+              "required": [],
+              "additionalProperties": false,
+              "description": "新增时可省略字段，按默认值补齐。image需要导入PNG，不能只改shape凭空创建素材。"
+            }
+          },
+          "required": [
+            "path"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "output": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "columns": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 16,
+            "description": "0为自动排列。"
+          },
+          "frame": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 31,
+            "description": "从0开始的单帧索引，必须小于实际帧数。"
+          },
+          "preview": {
+            "type": "object",
+            "properties": {
+              "frames": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 16,
+                "items": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 31,
+                  "description": "从0开始，必须小于实际帧数。"
+                }
+              },
+              "columns": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 8
+              },
+              "cellSize": {
+                "type": "integer",
+                "minimum": 32,
+                "maximum": 256
+              },
+              "background": {
+                "type": "string",
+                "enum": [
+                  "checker",
+                  "dark",
+                  "light"
+                ]
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "version"
+    ],
+    "additionalProperties": false,
+    "$schema": "https://json-schema.org/draft/2020-12/schema"
+  },
+  "previewSchema": {
+    "type": "object",
+    "properties": {
+      "frames": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 16,
+        "items": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 31,
+          "description": "从0开始，必须小于实际帧数。"
+        }
+      },
+      "columns": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 8
+      },
+      "cellSize": {
+        "type": "integer",
+        "minimum": 32,
+        "maximum": 256
+      },
+      "background": {
+        "type": "string",
+        "enum": [
+          "checker",
+          "dark",
+          "light"
+        ]
+      }
+    },
+    "required": [],
+    "additionalProperties": false
+  },
+  "executionOrder": [
+    "load projectPath if supplied",
+    "apply recipePath if supplied",
+    "apply effect settings/template",
+    "apply module operations in order",
+    "import PNG assets in order",
+    "diagnose and export"
+  ],
+  "browserAPI": {
+    "entry": "window.PixelWorkshop.call(method, args)",
+    "envelope": "{ok, apiVersion, revision, result} or {ok:false, apiVersion, revision, error:{code,message,details}}",
+    "conflictField": "expectedRevision",
+    "methods": [
+      "describe",
+      "getState",
+      "getProject",
+      "listPresets",
+      "setEffect",
+      "patchEffect",
+      "applyRecipe",
+      "loadProject",
+      "restoreRevision",
+      "importAsset",
+      "inspect",
+      "preview",
+      "exportBundle"
+    ]
+  },
+  "errors": [
+    "UNKNOWN_FIELD",
+    "UNKNOWN_PRESET",
+    "UNKNOWN_MODULE",
+    "UNKNOWN_OPERATION",
+    "INVALID_ARGUMENT",
+    "VALIDATION_ERROR",
+    "REVISION_CONFLICT",
+    "INVALID_ASSET",
+    "EMPTY_ASSET",
+    "PROJECT_TOO_LARGE",
+    "RECIPE_TOO_LARGE",
+    "FILE_NOT_FOUND",
+    "INVALID_JSON",
+    "OUTPUT_EXISTS",
+    "BROWSER_NOT_FOUND",
+    "CANCELLED"
+  ],
+  "notes": [
+    "JSON Schema提供单字段范围；实际运行还校验模块容量、时间总和、唯一ID、素材帧数和预算。",
+    "图集、单帧透明；preview为带底色和标签的观察图。",
+    "所有输出目录必须新建，便于回退；CLI不持久启动服务。"
+  ]
+}
